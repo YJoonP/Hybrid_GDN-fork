@@ -1,0 +1,37 @@
+{
+ "reason": "user-approved: batch-1 output mismatches recorded as match rate when the state check passes and every mismatch sits on a bf16 near-tie (top1-top2 gap <= 2 ulps at the top-1 logit; earlier records: <= 0.125)",
+ "identical": 36,
+ "n": 50,
+ "mismatch_gaps": [
+  0.0,
+  0.0,
+  0.125,
+  0.125,
+  0.125,
+  0.0,
+  0.25,
+  0.125,
+  0.125,
+  0.125,
+  0.125,
+  0.0,
+  0.125,
+  0.125
+ ],
+ "mismatch_gaps_in_ulps": [
+  0.0,
+  0.0,
+  1.0,
+  1.0,
+  1.0,
+  0.0,
+  2.0,
+  1.0,
+  1.0,
+  1.0,
+  1.0,
+  0.0,
+  1.0,
+  1.0
+ ]
+}

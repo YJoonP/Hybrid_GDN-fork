@@ -1,0 +1,146 @@
+{
+ "method": "dflash",
+ "batch": 64,
+ "block": 16,
+ "rollback": "oracle",
+ "cuda_visible_devices": "0",
+ "gpu_uuid": "cd9789b9-018c-07ae-cf60-11bbd7dcb463",
+ "snapshot_formula": {
+  "layers": 24,
+  "positions": 16,
+  "batch": 64,
+  "rec_state_bytes": 2097152,
+  "conv_state_bytes": 49152,
+  "total_bytes": 52747567104
+ },
+ "engine": "graph",
+ "buckets": [
+  1,
+  2,
+  4,
+  8,
+  16,
+  32,
+  64
+ ],
+ "snapshot_allocated": {
+  "rec_bytes": 3221225472,
+  "conv_bytes": 0,
+  "total_bytes": 3221225472,
+  "layers": 24,
+  "positions": 1,
+  "batch": 64
+ },
+ "status": "done",
+ "runs": [
+  {
+   "n_seq": 256,
+   "decode_tokens": 32512,
+   "decode_s": 29.123469010926783,
+   "prefill_s": 16.519605048000813,
+   "throughput": 1116.3505277411107,
+   "tau": 6.234324065196549,
+   "tpot_ms": 53.35619928327086,
+   "steps": 96,
+   "sections": {
+    "draft": 7.822315896607939,
+    "verify": 20.080143362045295,
+    "save": 0.00016793599957600237,
+    "accept": 0.00451276810467243,
+    "restore": 0.9171046386361121,
+    "kv_truncate": 0.009092095889616758,
+    "host_gap": 0.003351489690134341,
+    "remove": 0.2867808239534497
+   },
+   "gdn_verify_kernel_s": 0.0,
+   "prediction": {
+    "select": "topk",
+    "k": 1,
+    "thr": null,
+    "slots_per_seq": 1,
+    "row_steps": 5215,
+    "hit_rate": 1.0,
+    "from_s0_rate": 0.0,
+    "replay_tokens_per_row_step": 0.0,
+    "replay_hist": {
+     "0": 5215
+    },
+    "oracle_trace": "results_graph_specla/raw/dflash_bs64_run1.jsonl"
+   },
+   "run": 1
+  },
+  {
+   "n_seq": 256,
+   "decode_tokens": 32512,
+   "decode_s": 28.963606952689588,
+   "prefill_s": 16.562209312804043,
+   "throughput": 1122.512125409881,
+   "tau": 6.234324065196549,
+   "tpot_ms": 53.05104374278959,
+   "steps": 96,
+   "sections": {
+    "draft": 7.681694805867968,
+    "verify": 20.0615516090393,
+    "save": 0.00016998399957083164,
+    "accept": 0.0044892161004245245,
+    "restore": 0.9161144302487374,
+    "kv_truncate": 0.009093119891826065,
+    "host_gap": 0.0035127012950853763,
+    "remove": 0.2869810862466693
+   },
+   "gdn_verify_kernel_s": 0.0,
+   "prediction": {
+    "select": "topk",
+    "k": 1,
+    "thr": null,
+    "slots_per_seq": 1,
+    "row_steps": 5215,
+    "hit_rate": 1.0,
+    "from_s0_rate": 0.0,
+    "replay_tokens_per_row_step": 0.0,
+    "replay_hist": {
+     "0": 5215
+    },
+    "oracle_trace": "results_graph_specla/raw/dflash_bs64_run1.jsonl"
+   },
+   "run": 2
+  },
+  {
+   "n_seq": 256,
+   "decode_tokens": 32512,
+   "decode_s": 28.846055770292878,
+   "prefill_s": 16.532842246815562,
+   "throughput": 1127.0864987192633,
+   "tau": 6.234324065196549,
+   "tpot_ms": 52.813232992460634,
+   "steps": 96,
+   "sections": {
+    "draft": 7.658748792633416,
+    "verify": 19.96809625625611,
+    "save": 0.00017510399955790486,
+    "accept": 0.0044697600975632645,
+    "restore": 0.9153576931953429,
+    "kv_truncate": 0.009084927890449769,
+    "host_gap": 0.0032737458535719056,
+    "remove": 0.2868494903668761
+   },
+   "gdn_verify_kernel_s": 0.0,
+   "prediction": {
+    "select": "topk",
+    "k": 1,
+    "thr": null,
+    "slots_per_seq": 1,
+    "row_steps": 5215,
+    "hit_rate": 1.0,
+    "from_s0_rate": 0.0,
+    "replay_tokens_per_row_step": 0.0,
+    "replay_hist": {
+     "0": 5215
+    },
+    "oracle_trace": "results_graph_specla/raw/dflash_bs64_run1.jsonl"
+   },
+   "run": 3
+  }
+ ],
+ "peak_mem_gb": 20.129046016
+}

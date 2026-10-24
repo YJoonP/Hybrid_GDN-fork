@@ -1,0 +1,143 @@
+{
+ "1": {
+  "eager_runs": 39,
+  "graph_runs": 60,
+  "eager_all_same": [
+   256,
+   256
+  ],
+  "graph_all_same": [
+   256,
+   256
+  ],
+  "graph_run_dirs": [
+   "results_graph_confk_thr0.1",
+   "results_graph_confk_thr0.3",
+   "results_graph_confk_thr0.5",
+   "results_graph_confk_thr0.7",
+   "results_graph_confk_thr0.9",
+   "results_graph_confk_top1",
+   "results_graph_confk_top2",
+   "results_graph_confk_top4",
+   "results_graph_confkb_thr0.1",
+   "results_graph_confkb_thr0.3",
+   "results_graph_confkb_thr0.5",
+   "results_graph_confkb_thr0.7",
+   "results_graph_confkb_thr0.9",
+   "results_graph_confkb_top1",
+   "results_graph_confkb_top2",
+   "results_graph_confkb_top4",
+   "results_graph_fullstate",
+   "results_graph_modeal",
+   "results_graph_oracle",
+   "results_graph_specla"
+  ],
+  "dflash_eager_vs_graph": [
+   191,
+   256
+  ],
+  "dflash_eager_vs_graph_union": [
+   191,
+   256
+  ],
+  "ar_eager_vs_graph": [
+   188,
+   256
+  ],
+  "graph_dflash_vs_ar": [
+   188,
+   256
+  ]
+ },
+ "8": {
+  "eager_runs": 39,
+  "graph_runs": 60,
+  "eager_all_same": [
+   256,
+   256
+  ],
+  "graph_all_same": [
+   256,
+   256
+  ],
+  "graph_run_dirs": [
+   "results_graph_confk_thr0.1",
+   "results_graph_confk_thr0.3",
+   "results_graph_confk_thr0.5",
+   "results_graph_confk_thr0.7",
+   "results_graph_confk_thr0.9",
+   "results_graph_confk_top1",
+   "results_graph_confk_top2",
+   "results_graph_confk_top4",
+   "results_graph_confkb_thr0.1",
+   "results_graph_confkb_thr0.3",
+   "results_graph_confkb_thr0.5",
+   "results_graph_confkb_thr0.7",
+   "results_graph_confkb_thr0.9",
+   "results_graph_confkb_top1",
+   "results_graph_confkb_top2",
+   "results_graph_confkb_top4",
+   "results_graph_fullstate",
+   "results_graph_modeal",
+   "results_graph_oracle",
+   "results_graph_specla"
+  ],
+  "dflash_eager_vs_graph": [
+   206,
+   256
+  ],
+  "dflash_eager_vs_graph_union": [
+   206,
+   256
+  ],
+  "ar_eager_vs_graph": [
+   192,
+   256
+  ],
+  "graph_dflash_vs_ar": [
+   181,
+   256
+  ]
+ },
+ "64": {
+  "eager_runs": 30,
+  "graph_runs": 9,
+  "eager_all_same": [
+   256,
+   256
+  ],
+  "graph_all_same": [
+   256,
+   256
+  ],
+  "graph_run_dirs": [
+   "results_graph_modeal",
+   "results_graph_oracle",
+   "results_graph_specla"
+  ],
+  "dflash_eager_vs_graph": [
+   214,
+   256
+  ],
+  "dflash_eager_vs_graph_union": [
+   214,
+   256
+  ],
+  "ar_eager_vs_graph": [
+   190,
+   256
+  ],
+  "graph_dflash_vs_ar": [
+   181,
+   256
+  ]
+ },
+ "128": {
+  "eager_runs": 0,
+  "graph_runs": 0,
+  "ar_eager_vs_graph": [
+   192,
+   256
+  ]
+ }
+}

@@ -1,0 +1,161 @@
+{
+ "method": "dflash",
+ "batch": 1,
+ "block": 16,
+ "rollback": "confk",
+ "cuda_visible_devices": "0",
+ "gpu_uuid": "cd9789b9-018c-07ae-cf60-11bbd7dcb463",
+ "snapshot_formula": {
+  "layers": 24,
+  "positions": 16,
+  "batch": 1,
+  "rec_state_bytes": 2097152,
+  "conv_state_bytes": 49152,
+  "total_bytes": 824180736
+ },
+ "engine": "graph",
+ "buckets": [
+  1
+ ],
+ "snapshot_allocated": {
+  "rec_bytes": 150994944,
+  "conv_bytes": 0,
+  "total_bytes": 150994944,
+  "layers": 24,
+  "positions": 3,
+  "batch": 1
+ },
+ "status": "done",
+ "runs": [
+  {
+   "n_seq": 256,
+   "decode_tokens": 32512,
+   "decode_s": 123.76538175623864,
+   "prefill_s": 16.411319826729596,
+   "throughput": 262.6905806668444,
+   "tau": 6.203396298416333,
+   "tpot_ms": 3.803943579763955,
+   "steps": 5241,
+   "sections": {
+    "draft": 28.515941865868808,
+    "verify": 92.10604849624629,
+    "save": 0.008961023977375363,
+    "accept": 0.16874700655416427,
+    "restore": 2.726551549673064,
+    "kv_truncate": 0.03793510447256535,
+    "host_gap": 0.10962861849332733,
+    "remove": 0.09156809095293283
+   },
+   "gdn_verify_kernel_s": 0.0,
+   "prediction": {
+    "select": "topk",
+    "k": 2,
+    "thr": null,
+    "slots_per_seq": 3,
+    "row_steps": 5241,
+    "hit_rate": 0.6431978630032437,
+    "from_s0_rate": 0.059339820644915095,
+    "replay_tokens_per_row_step": 1.1158175920625835,
+    "replay_hist": {
+     "0": 3371,
+     "1": 665,
+     "2": 356,
+     "3": 257,
+     "4": 170,
+     "5": 118,
+     "6": 84,
+     "7": 59,
+     "8": 57,
+     "9": 41,
+     "10": 27,
+     "11": 19,
+     "12": 12,
+     "13": 5
+    }
+   },
+   "run": 1
+  },
+  {
+   "n_seq": 256,
+   "decode_tokens": 32512,
+   "decode_s": 124.03134916909039,
+   "prefill_s": 16.500669989734888,
+   "throughput": 262.12727844858637,
+   "tau": 6.203396298416333,
+   "tpot_ms": 3.812082745989613,
+   "steps": 5241,
+   "sections": {
+    "draft": 28.564904813229727,
+    "verify": 92.31115983200038,
+    "save": 0.008993791977292645,
+    "accept": 0.16952524681762574,
+    "restore": 2.7356958704889216,
+    "kv_truncate": 0.03806105646118784,
+    "host_gap": 0.11009362663852423,
+    "remove": 0.09291493147611618
+   },
+   "gdn_verify_kernel_s": 0.0,
+   "prediction": {
+    "select": "topk",
+    "k": 2,
+    "thr": null,
+    "slots_per_seq": 3,
+    "row_steps": 0,
+    "hit_rate": 0.0,
+    "from_s0_rate": 0.0,
+    "replay_tokens_per_row_step": 0.0,
+    "replay_hist": {}
+   },
+   "run": 2
+  },
+  {
+   "n_seq": 256,
+   "decode_tokens": 32512,
+   "decode_s": 124.18356650043279,
+   "prefill_s": 16.4025187632069,
+   "throughput": 261.8059773624451,
+   "tau": 6.203396298416333,
+   "tpot_ms": 3.816811183163177,
+   "steps": 5241,
+   "sections": {
+    "draft": 28.59372676885854,
+    "verify": 92.43064319992047,
+    "save": 0.008971263977349526,
+    "accept": 0.16993894295767606,
+    "restore": 2.740981761843016,
+    "kv_truncate": 0.038107136452573194,
+    "host_gap": 0.10979611299128547,
+    "remove": 0.091401313431561
+   },
+   "gdn_verify_kernel_s": 0.0,
+   "prediction": {
+    "select": "topk",
+    "k": 2,
+    "thr": null,
+    "slots_per_seq": 3,
+    "row_steps": 5241,
+    "hit_rate": 0.6431978630032437,
+    "from_s0_rate": 0.059339820644915095,
+    "replay_tokens_per_row_step": 1.1158175920625835,
+    "replay_hist": {
+     "0": 3371,
+     "1": 665,
+     "2": 356,
+     "3": 257,
+     "4": 170,
+     "5": 118,
+     "6": 84,
+     "7": 59,
+     "8": 57,
+     "9": 41,
+     "10": 27,
+     "11": 19,
+     "12": 12,
+     "13": 5
+    }
+   },
+   "run": 3
+  }
+ ],
+ "peak_mem_gb": 10.181862912
+}

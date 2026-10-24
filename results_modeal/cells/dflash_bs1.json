@@ -1,0 +1,179 @@
+{
+ "method": "dflash",
+ "batch": 1,
+ "block": 16,
+ "rollback": "modeal",
+ "cuda_visible_devices": "1",
+ "gpu_uuid": "5b929d48-a1d9-d40e-b4e5-6ae83db625b0",
+ "snapshot_formula": {
+  "layers": 24,
+  "positions": 16,
+  "batch": 1,
+  "rec_state_bytes": 2097152,
+  "conv_state_bytes": 49152,
+  "total_bytes": 824180736
+ },
+ "snapshot_allocated": {
+  "rec_bytes": 50331648,
+  "conv_bytes": 1179648,
+  "total_bytes": 51511296,
+  "layers": 24,
+  "positions": 1,
+  "batch": 1
+ },
+ "store_calibration": {
+  "batch": 1,
+  "store_position": 2,
+  "layer_ms_store": 0.07925760149955749,
+  "layer_ms_nostore": 0.15037440061569213,
+  "step_ms_store": 1.9021824359893797,
+  "step_ms_nostore": 3.608985614776611,
+  "step_ms_save_overhead": -1.7068031787872313
+ },
+ "status": "done",
+ "runs": [
+  {
+   "n_seq": 256,
+   "decode_tokens": 32512,
+   "decode_s": 314.142015629448,
+   "prefill_s": 16.364912934601307,
+   "throughput": 103.49459283520396,
+   "tau": 6.223583460949464,
+   "tpot_ms": 9.659712232724255,
+   "steps": 5224,
+   "sections": {
+    "draft": 65.0861539626494,
+    "verify": 221.88427807670087,
+    "save": 2.037229091860354,
+    "accept": 2.859425042755902,
+    "restore": 21.86249991413206,
+    "kv_truncate": 0.3269780222326517,
+    "remove": 0.0854515191167593
+   },
+   "gdn_verify_kernel_s": 14.275206689447165,
+   "al_hist": [
+    0,
+    548,
+    717,
+    577,
+    483,
+    420,
+    395,
+    315,
+    260,
+    209,
+    202,
+    175,
+    138,
+    106,
+    105,
+    113,
+    461
+   ],
+   "m_counts": {
+    "5": 16,
+    "3": 9,
+    "2": 5061,
+    "1": 132,
+    "6": 6
+   },
+   "run": 1
+  },
+  {
+   "n_seq": 256,
+   "decode_tokens": 32512,
+   "decode_s": 317.07175506372005,
+   "prefill_s": 16.48092929366976,
+   "throughput": 102.53830396676693,
+   "tau": 6.223583460949464,
+   "tpot_ms": 9.749788155526696,
+   "steps": 5224,
+   "sections": {
+    "draft": 65.57848513685167,
+    "verify": 224.0112158851698,
+    "save": 2.052029292099178,
+    "accept": 2.8967598602175713,
+    "restore": 22.115428525954485,
+    "kv_truncate": 0.33119381219148636,
+    "remove": 0.08664255123585463
+   },
+   "gdn_verify_kernel_s": 14.492155314929784,
+   "al_hist": [
+    0,
+    548,
+    717,
+    577,
+    483,
+    420,
+    395,
+    315,
+    260,
+    209,
+    202,
+    175,
+    138,
+    106,
+    105,
+    113,
+    461
+   ],
+   "m_counts": {
+    "5": 16,
+    "3": 9,
+    "2": 5061,
+    "1": 132,
+    "6": 6
+   },
+   "run": 2
+  },
+  {
+   "n_seq": 256,
+   "decode_tokens": 32512,
+   "decode_s": 318.4972585141659,
+   "prefill_s": 16.557830189354718,
+   "throughput": 102.07937158289215,
+   "tau": 6.223583460949464,
+   "tpot_ms": 9.793675012896147,
+   "steps": 5224,
+   "sections": {
+    "draft": 65.86208074074239,
+    "verify": 225.02233308833092,
+    "save": 2.061024614609778,
+    "accept": 2.90947188436985,
+    "restore": 22.225048922933638,
+    "kv_truncate": 0.3320027682930231,
+    "remove": 0.0852964948862791
+   },
+   "gdn_verify_kernel_s": 14.493810022644698,
+   "al_hist": [
+    0,
+    548,
+    717,
+    577,
+    483,
+    420,
+    395,
+    315,
+    260,
+    209,
+    202,
+    175,
+    138,
+    106,
+    105,
+    113,
+    461
+   ],
+   "m_counts": {
+    "5": 16,
+    "3": 9,
+    "2": 5061,
+    "1": 132,
+    "6": 6
+   },
+   "run": 3
+  }
+ ],
+ "peak_mem_gb": 10.06282752,
+ "renamed_from": "specla (same mode-AL code; renamed when pure-recompute SpecLA was added)"
+}

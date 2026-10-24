@@ -1,0 +1,83 @@
+{
+ "method": "dflash",
+ "batch": 64,
+ "block": 16,
+ "rollback": "specla",
+ "cuda_visible_devices": "1",
+ "gpu_uuid": "5b929d48-a1d9-d40e-b4e5-6ae83db625b0",
+ "snapshot_allocated": {
+  "rec_bytes": 0,
+  "conv_bytes": 0,
+  "total_bytes": 0,
+  "layers": 24,
+  "positions": 0,
+  "batch": 64
+ },
+ "status": "done",
+ "runs": [
+  {
+   "n_seq": 256,
+   "decode_tokens": 32512,
+   "decode_s": 26.659313075244427,
+   "prefill_s": 16.799722076393664,
+   "throughput": 1219.5362989375117,
+   "tau": 6.2319340617212955,
+   "tpot_ms": 48.6913985952824,
+   "steps": 99,
+   "sections": {
+    "draft": 6.903411353006959,
+    "verify": 18.44727506954223,
+    "save": 0.0016177548095583916,
+    "accept": 0.06152060907334089,
+    "restore": 0.9651561183854938,
+    "kv_truncate": 0.013875487260520458,
+    "remove": 0.2664566831663251
+   },
+   "gdn_verify_kernel_s": 1.4459626274108888,
+   "run": 1
+  },
+  {
+   "n_seq": 256,
+   "decode_tokens": 32512,
+   "decode_s": 26.69201408699155,
+   "prefill_s": 16.550631150603294,
+   "throughput": 1218.0422164487334,
+   "tau": 6.2319340617212955,
+   "tpot_ms": 48.769696469973944,
+   "steps": 99,
+   "sections": {
+    "draft": 6.90578421484679,
+    "verify": 18.483732908032835,
+    "save": 0.001382477581501007,
+    "accept": 0.05856778100132942,
+    "restore": 0.9635445307940245,
+    "kv_truncate": 0.013695826753973961,
+    "remove": 0.2653063479810953
+   },
+   "gdn_verify_kernel_s": 1.4491650943979622,
+   "run": 2
+  },
+  {
+   "n_seq": 256,
+   "decode_tokens": 32512,
+   "decode_s": 26.67120621073991,
+   "prefill_s": 16.576411622576416,
+   "throughput": 1218.9924873704485,
+   "tau": 6.2319340617212955,
+   "tpot_ms": 48.73704020526103,
+   "steps": 99,
+   "sections": {
+    "draft": 6.904060881584883,
+    "verify": 18.46569672599435,
+    "save": 0.0013612359762191772,
+    "accept": 0.05823936127126217,
+    "restore": 0.9637659415602684,
+    "kv_truncate": 0.013793449848890305,
+    "remove": 0.2642886145040393
+   },
+   "gdn_verify_kernel_s": 1.4475271735414863,
+   "run": 3
+  }
+ ],
+ "peak_mem_gb": 17.145419264
+}

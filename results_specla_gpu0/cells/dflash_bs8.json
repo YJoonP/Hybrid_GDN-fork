@@ -1,0 +1,91 @@
+{
+ "method": "dflash",
+ "batch": 8,
+ "block": 16,
+ "rollback": "specla",
+ "cuda_visible_devices": "0",
+ "gpu_uuid": "cd9789b9-018c-07ae-cf60-11bbd7dcb463",
+ "snapshot_formula": {
+  "layers": 24,
+  "positions": 16,
+  "batch": 8,
+  "rec_state_bytes": 2097152,
+  "conv_state_bytes": 49152,
+  "total_bytes": 6593445888
+ },
+ "snapshot_allocated": {
+  "rec_bytes": 0,
+  "conv_bytes": 0,
+  "total_bytes": 0,
+  "layers": 24,
+  "positions": 0,
+  "batch": 8
+ },
+ "status": "done",
+ "runs": [
+  {
+   "n_seq": 256,
+   "decode_tokens": 32512,
+   "decode_s": 41.84764783270657,
+   "prefill_s": 16.4536329228431,
+   "throughput": 776.9134391966907,
+   "tau": 6.25832531280077,
+   "tpot_ms": 10.037423873239549,
+   "steps": 662,
+   "sections": {
+    "draft": 9.360787495039403,
+    "verify": 29.4612204041332,
+    "save": 0.006239269860088825,
+    "accept": 0.3616074053570628,
+    "restore": 2.323156138882041,
+    "kv_truncate": 0.042679546400904655,
+    "remove": 0.29195757303386927
+   },
+   "gdn_verify_kernel_s": 2.963136956579983,
+   "run": 1
+  },
+  {
+   "n_seq": 256,
+   "decode_tokens": 32512,
+   "decode_s": 41.884756138548255,
+   "prefill_s": 16.469883437268436,
+   "throughput": 776.2251233469133,
+   "tau": 6.25832531280077,
+   "tpot_ms": 10.041275315494762,
+   "steps": 662,
+   "sections": {
+    "draft": 9.343296836130321,
+    "verify": 29.509579898789525,
+    "save": 0.0062639303505420685,
+    "accept": 0.36330317705869675,
+    "restore": 2.3272198447957635,
+    "kv_truncate": 0.04286526143550873,
+    "remove": 0.2922271899878979
+   },
+   "gdn_verify_kernel_s": 2.9621764426752923,
+   "run": 2
+  },
+  {
+   "n_seq": 256,
+   "decode_tokens": 32512,
+   "decode_s": 41.929604010656476,
+   "prefill_s": 16.516287385486066,
+   "throughput": 775.3948735537074,
+   "tau": 6.25832531280077,
+   "tpot_ms": 10.056685169937145,
+   "steps": 662,
+   "sections": {
+    "draft": 9.354983224533498,
+    "verify": 29.53481599316001,
+    "save": 0.006215356290340424,
+    "accept": 0.36409900337457657,
+    "restore": 2.3326128972694278,
+    "kv_truncate": 0.04292943235486746,
+    "remove": 0.2939481036737561
+   },
+   "gdn_verify_kernel_s": 2.9573589086830614,
+   "run": 3
+  }
+ ],
+ "peak_mem_gb": 10.726994432
+}

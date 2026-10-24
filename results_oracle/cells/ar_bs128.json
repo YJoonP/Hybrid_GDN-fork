@@ -1,0 +1,77 @@
+{
+ "method": "ar",
+ "batch": 128,
+ "block": 1,
+ "rollback": null,
+ "status": "done",
+ "runs": [
+  {
+   "n_seq": 256,
+   "decode_tokens": 32512,
+   "decode_s": 25.55676943436265,
+   "prefill_s": 16.470400096848607,
+   "throughput": 1272.1482691112599,
+   "tau": 1.0,
+   "tpot_ms": 100.55270031695828,
+   "steps": 254,
+   "sections": {
+    "draft": 0.001891855150461197,
+    "verify": 25.39928765501827,
+    "save": 0.003135000355541706,
+    "accept": 0.12517046462744474,
+    "restore": 0.0020832354202866554,
+    "kv_truncate": 0.008817669935524464,
+    "remove": 0.016383553855121136
+   },
+   "gdn_verify_kernel_s": 0.0,
+   "run": 1
+  },
+  {
+   "n_seq": 256,
+   "decode_tokens": 32512,
+   "decode_s": 23.540827749297023,
+   "prefill_s": 16.48060178104788,
+   "throughput": 1381.0899236952648,
+   "tau": 1.0,
+   "tpot_ms": 92.61540658625262,
+   "steps": 254,
+   "sections": {
+    "draft": 0.0018934989348053932,
+    "verify": 23.384626490995288,
+    "save": 0.0030320705845952034,
+    "accept": 0.12395442649722099,
+    "restore": 0.0020633097738027573,
+    "kv_truncate": 0.008743476122617722,
+    "remove": 0.016514476388692856
+   },
+   "gdn_verify_kernel_s": 0.0,
+   "run": 2
+  },
+  {
+   "n_seq": 256,
+   "decode_tokens": 32512,
+   "decode_s": 23.552114229649305,
+   "prefill_s": 16.47930976562202,
+   "throughput": 1380.4280873889134,
+   "tau": 1.0,
+   "tpot_ms": 92.66055616234854,
+   "steps": 254,
+   "sections": {
+    "draft": 0.0019009197130799294,
+    "verify": 23.39471775572747,
+    "save": 0.003087356686592102,
+    "accept": 0.12517156451940536,
+    "restore": 0.0020714495331048965,
+    "kv_truncate": 0.008832219056785107,
+    "remove": 0.016332964412868023
+   },
+   "gdn_verify_kernel_s": 0.0,
+   "run": 3
+  }
+ ],
+ "peak_mem_gb": 20.031617024,
+ "cuda_visible_devices": "0",
+ "gpu_uuid": "cd9789b9-018c-07ae-cf60-11bbd7dcb463",
+ "gpu_backfilled": "launched via src/run_gpu.sh with CUDA_VISIBLE_DEVICES=0 hard-coded, before the field existed",
+ "reused_from": "/home/sungfire/Hybrid_GDN/results_fullstate"
+}

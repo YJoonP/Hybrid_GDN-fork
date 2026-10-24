@@ -1,0 +1,21 @@
+{
+ "method": "dflash",
+ "batch": 64,
+ "block": 16,
+ "rollback": "fullstate",
+ "cuda_visible_devices": "0",
+ "gpu_uuid": "cd9789b9-018c-07ae-cf60-11bbd7dcb463",
+ "snapshot_formula": {
+  "layers": 24,
+  "positions": 16,
+  "batch": 64,
+  "rec_state_bytes": 2097152,
+  "conv_state_bytes": 49152,
+  "total_bytes": 52747567104
+ },
+ "status": "oom",
+ "stage": "alloc+capture",
+ "error": "CUDA out of memory. Tried to allocate 2.00 GiB. GPU 0 has a total capacity of 23.56 GiB of which 1.26 GiB is free. Including non-PyTorch memory, this process has 22.28 GiB memory in use. Of the allocated memory 21.61 GiB is allocated by PyTorch, with 11.88 MiB allocated in private pools (e.g., CUDA Graphs), and 317.77 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory i",
+ "runs": [],
+ "peak_mem_gb": 23.19277312
+}

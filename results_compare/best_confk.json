@@ -1,0 +1,20 @@
+{
+ "best": "confk_top4",
+ "over_batches": [
+  1,
+  8
+ ],
+ "mean_speedup": {
+  "confk_top1": 4.184623872714451,
+  "confk_top2": 4.267863592489254,
+  "confk_top4": 4.302482951608928,
+  "confk_thr0.1": 4.19364353130513,
+  "confk_thr0.3": 4.298667011887625,
+  "confk_thr0.5": 4.206653355063765,
+  "confk_thr0.7": 4.2609640609885435,
+  "confk_thr0.9": 4.214012490847291
+ },
+ "best_B": null,
+ "over_batches_B": [],
+ "mean_speedup_B": {}
+}

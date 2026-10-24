@@ -1,0 +1,29 @@
+# --- environment / caches
+.venv/
+__pycache__/
+*.pyc
+
+# --- model weights (download from Hugging Face: Qwen/Qwen3.5-4B, z-lab/Qwen3.5-4B-DFlash)
+models/
+
+# --- third-party code: its own git clone (z-lab/dflash @ 07ebd93, installed with pip install -e --no-deps)
+third_party/
+
+# --- collaborators' packages and archives (not ours to publish)
+ext/
+*.zip
+
+# --- large / regenerable datasets (src/prep_data.py); data/gsm8k_256_indices.json stays
+data/hotpot_val.jsonl
+data/para_pool.json
+
+# --- per-question / per-step raw records of every run (~1 GB); cells/, env, checks and results_compare*/ stay
+results_*/raw/
+results_superseded/
+
+# --- run-time artifacts
+logs/
+*.log
+*.lock
+*_queue*.txt
+share/*.tar.gz

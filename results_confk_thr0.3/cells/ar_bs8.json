@@ -1,0 +1,74 @@
+{
+ "method": "ar",
+ "batch": 8,
+ "block": 1,
+ "rollback": null,
+ "status": "done",
+ "runs": [
+  {
+   "n_seq": 256,
+   "decode_tokens": 32512,
+   "decode_s": 181.85903874319047,
+   "prefill_s": 16.547809651121497,
+   "throughput": 178.77582673199618,
+   "tau": 1.0,
+   "tpot_ms": 44.73173140395095,
+   "steps": 4064,
+   "sections": {
+    "draft": 0.02987778279930353,
+    "verify": 179.63280876353383,
+    "save": 0.03858738485723734,
+    "accept": 1.9174336455762386,
+    "restore": 0.0326427249237895,
+    "kv_truncate": 0.13840612396597862,
+    "remove": 0.06928231753408909
+   },
+   "gdn_verify_kernel_s": 0.0,
+   "run": 1
+  },
+  {
+   "n_seq": 256,
+   "decode_tokens": 32512,
+   "decode_s": 182.41431202180684,
+   "prefill_s": 16.57651599124074,
+   "throughput": 178.23162908463746,
+   "tau": 1.0,
+   "tpot_ms": 44.86818400607624,
+   "steps": 4064,
+   "sections": {
+    "draft": 0.03008139505982399,
+    "verify": 180.17949047777802,
+    "save": 0.038475328125059605,
+    "accept": 1.9245732529088855,
+    "restore": 0.032978376373648643,
+    "kv_truncate": 0.13870097044855356,
+    "remove": 0.07001222111284733
+   },
+   "gdn_verify_kernel_s": 0.0,
+   "run": 2
+  },
+  {
+   "n_seq": 256,
+   "decode_tokens": 32512,
+   "decode_s": 182.09764278493822,
+   "prefill_s": 16.548813222907484,
+   "throughput": 178.54157529319295,
+   "tau": 1.0,
+   "tpot_ms": 44.79033356407794,
+   "steps": 4064,
+   "sections": {
+    "draft": 0.030127238482236862,
+    "verify": 179.86567294225097,
+    "save": 0.0385467354208231,
+    "accept": 1.9219919349998236,
+    "restore": 0.03297392185777426,
+    "kv_truncate": 0.13860283140093088,
+    "remove": 0.06972718052566051
+   },
+   "gdn_verify_kernel_s": 0.0,
+   "run": 3
+  }
+ ],
+ "peak_mem_gb": 10.448313856,
+ "reused_from": "/home/sungfire/Hybrid_GDN/results_fullstate"
+}

@@ -1,0 +1,181 @@
+{
+ "method": "dflash",
+ "batch": 8,
+ "block": 16,
+ "rollback": "confk",
+ "cuda_visible_devices": "1",
+ "gpu_uuid": "5b929d48-a1d9-d40e-b4e5-6ae83db625b0",
+ "snapshot_formula": {
+  "layers": 24,
+  "positions": 16,
+  "batch": 8,
+  "rec_state_bytes": 2097152,
+  "conv_state_bytes": 49152,
+  "total_bytes": 6593445888
+ },
+ "snapshot_allocated": {
+  "rec_bytes": 805306368,
+  "conv_bytes": 0,
+  "total_bytes": 805306368,
+  "layers": 24,
+  "positions": 2,
+  "batch": 8
+ },
+ "store_calibration": {
+  "batch": 8,
+  "store_position": "per-row slots",
+  "layer_ms_store": 0.13834240436553955,
+  "layer_ms_nostore": 0.11156480312347412,
+  "step_ms_store": 3.320217704772949,
+  "step_ms_nostore": 2.677555274963379,
+  "step_ms_save_overhead": 0.6426624298095701
+ },
+ "status": "done",
+ "runs": [
+  {
+   "n_seq": 256,
+   "decode_tokens": 32512,
+   "decode_s": 43.53157756943256,
+   "prefill_s": 16.512405212968588,
+   "throughput": 746.860137290995,
+   "tau": 6.25832531280077,
+   "tpot_ms": 10.446575937304994,
+   "steps": 662,
+   "sections": {
+    "draft": 10.288656572811306,
+    "verify": 29.37223836686462,
+    "save": 0.00648142583668232,
+    "accept": 0.3581656003370881,
+    "restore": 3.1728494465351105,
+    "kv_truncate": 0.04028988629579544,
+    "remove": 0.2928962707519531
+   },
+   "gdn_verify_kernel_s": 3.532711694151163,
+   "prediction": {
+    "select": "topk",
+    "k": 1,
+    "thr": null,
+    "slots_per_seq": 2,
+    "row_steps": 5195,
+    "hit_rate": 0.43888354186718,
+    "from_s0_rate": 0.1364773820981713,
+    "replay_tokens_per_row_step": 2.053897978825794,
+    "replay_hist": {
+     "0": 2280,
+     "1": 865,
+     "2": 533,
+     "3": 373,
+     "4": 277,
+     "5": 206,
+     "6": 181,
+     "7": 115,
+     "8": 101,
+     "9": 87,
+     "10": 57,
+     "11": 54,
+     "12": 32,
+     "13": 24,
+     "14": 10
+    }
+   },
+   "run": 1
+  },
+  {
+   "n_seq": 256,
+   "decode_tokens": 32512,
+   "decode_s": 43.682759968563914,
+   "prefill_s": 16.54037152044475,
+   "throughput": 744.2753164726107,
+   "tau": 6.25832531280077,
+   "tpot_ms": 10.4782510267302,
+   "steps": 662,
+   "sections": {
+    "draft": 10.316245771944523,
+    "verify": 29.48200599756092,
+    "save": 0.006548155099153519,
+    "accept": 0.3612573593854904,
+    "restore": 3.182523955591023,
+    "kv_truncate": 0.040434918366372585,
+    "remove": 0.2937438106164336
+   },
+   "gdn_verify_kernel_s": 3.542160524345934,
+   "prediction": {
+    "select": "topk",
+    "k": 1,
+    "thr": null,
+    "slots_per_seq": 2,
+    "row_steps": 5195,
+    "hit_rate": 0.43888354186718,
+    "from_s0_rate": 0.1364773820981713,
+    "replay_tokens_per_row_step": 2.053897978825794,
+    "replay_hist": {
+     "0": 2280,
+     "1": 865,
+     "2": 533,
+     "3": 373,
+     "4": 277,
+     "5": 206,
+     "6": 181,
+     "7": 115,
+     "8": 101,
+     "9": 87,
+     "10": 57,
+     "11": 54,
+     "12": 32,
+     "13": 24,
+     "14": 10
+    }
+   },
+   "run": 2
+  },
+  {
+   "n_seq": 256,
+   "decode_tokens": 32512,
+   "decode_s": 43.79938806965947,
+   "prefill_s": 16.626714191399515,
+   "throughput": 742.2934756141394,
+   "tau": 6.25832531280077,
+   "tpot_ms": 10.506770022846645,
+   "steps": 662,
+   "sections": {
+    "draft": 10.323946034535766,
+    "verify": 29.574228525161743,
+    "save": 0.006545986048877239,
+    "accept": 0.36314865481108427,
+    "restore": 3.196556767448783,
+    "kv_truncate": 0.040504271164536476,
+    "remove": 0.2944578304886818
+   },
+   "gdn_verify_kernel_s": 3.5629985086098315,
+   "prediction": {
+    "select": "topk",
+    "k": 1,
+    "thr": null,
+    "slots_per_seq": 2,
+    "row_steps": 5195,
+    "hit_rate": 0.43888354186718,
+    "from_s0_rate": 0.1364773820981713,
+    "replay_tokens_per_row_step": 2.053897978825794,
+    "replay_hist": {
+     "0": 2280,
+     "1": 865,
+     "2": 533,
+     "3": 373,
+     "4": 277,
+     "5": 206,
+     "6": 181,
+     "7": 115,
+     "8": 101,
+     "9": 87,
+     "10": 57,
+     "11": 54,
+     "12": 32,
+     "13": 24,
+     "14": 10
+    }
+   },
+   "run": 3
+  }
+ ],
+ "peak_mem_gb": 11.560570368
+}

@@ -1,0 +1,74 @@
+{
+ "method": "ar",
+ "batch": 64,
+ "block": 1,
+ "rollback": null,
+ "status": "done",
+ "runs": [
+  {
+   "n_seq": 256,
+   "decode_tokens": 32512,
+   "decode_s": 26.8716919766739,
+   "prefill_s": 16.46528512891382,
+   "throughput": 1209.8977626054286,
+   "tau": 1.0,
+   "tpot_ms": 52.857317331093235,
+   "steps": 508,
+   "sections": {
+    "draft": 0.003756842575967312,
+    "verify": 26.577063879929483,
+    "save": 0.005902874283492565,
+    "accept": 0.24327333271503448,
+    "restore": 0.004091653041541576,
+    "kv_truncate": 0.017428621649742126,
+    "remove": 0.02017477247864008
+   },
+   "gdn_verify_kernel_s": 0.0,
+   "run": 1
+  },
+  {
+   "n_seq": 256,
+   "decode_tokens": 32512,
+   "decode_s": 26.366101048886776,
+   "prefill_s": 16.48625407833606,
+   "throughput": 1233.0985131141608,
+   "tau": 1.0,
+   "tpot_ms": 51.861352248733056,
+   "steps": 508,
+   "sections": {
+    "draft": 0.0037714187055826187,
+    "verify": 26.07087675575167,
+    "save": 0.005945092067122459,
+    "accept": 0.24352181516587734,
+    "restore": 0.004110516048967838,
+    "kv_truncate": 0.017341344617307186,
+    "remove": 0.02053410653024912
+   },
+   "gdn_verify_kernel_s": 0.0,
+   "run": 2
+  },
+  {
+   "n_seq": 256,
+   "decode_tokens": 32512,
+   "decode_s": 26.37244781013578,
+   "prefill_s": 16.49770104046911,
+   "throughput": 1232.8017571241373,
+   "tau": 1.0,
+   "tpot_ms": 51.87376313402845,
+   "steps": 508,
+   "sections": {
+    "draft": 0.0037529263645410538,
+    "verify": 26.07659883890301,
+    "save": 0.005818353034555912,
+    "accept": 0.24410109780728817,
+    "restore": 0.004105066880583763,
+    "kv_truncate": 0.017495389096438885,
+    "remove": 0.02057613804936409
+   },
+   "gdn_verify_kernel_s": 0.0,
+   "run": 3
+  }
+ ],
+ "peak_mem_gb": 14.924434432,
+ "reused_from": "/home/sungfire/Hybrid_GDN/results_fullstate"
+}

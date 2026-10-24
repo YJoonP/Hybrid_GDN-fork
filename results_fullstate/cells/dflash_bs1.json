@@ -1,0 +1,102 @@
+{
+ "method": "dflash",
+ "batch": 1,
+ "block": 16,
+ "rollback": "fullstate",
+ "snapshot_formula": {
+  "layers": 24,
+  "positions": 16,
+  "batch": 1,
+  "rec_state_bytes": 2097152,
+  "conv_state_bytes": 49152,
+  "total_bytes": 824180736
+ },
+ "snapshot_allocated": {
+  "rec_bytes": 805306368,
+  "conv_bytes": 18874368,
+  "total_bytes": 824180736,
+  "layers": 24,
+  "positions": 16,
+  "batch": 1,
+  "bytes_per_row_per_layer": 34340864
+ },
+ "store_calibration": {
+  "batch": 1,
+  "store_position": "all",
+  "layer_ms_store": 0.08602079749107361,
+  "layer_ms_nostore": 0.08381440043449402,
+  "step_ms_store": 2.0644991397857666,
+  "step_ms_nostore": 2.0115456104278566,
+  "step_ms_save_overhead": 0.05295352935791009
+ },
+ "status": "done",
+ "runs": [
+  {
+   "n_seq": 256,
+   "decode_tokens": 32512,
+   "decode_s": 305.7784378733486,
+   "prefill_s": 16.74089175928384,
+   "throughput": 106.3253518662629,
+   "tau": 6.223583460949464,
+   "tpot_ms": 9.4024976613754,
+   "steps": 5224,
+   "sections": {
+    "draft": 66.54980260040611,
+    "verify": 228.52421439252794,
+    "save": 2.8364105112850666,
+    "accept": 2.944464192725718,
+    "restore": 4.521593003533781,
+    "kv_truncate": 0.31751926615834236,
+    "remove": 0.08443390671163797
+   },
+   "gdn_verify_kernel_s": 17.254925279960037,
+   "run": 1
+  },
+  {
+   "n_seq": 256,
+   "decode_tokens": 32512,
+   "decode_s": 306.9742160215974,
+   "prefill_s": 16.801491271704435,
+   "throughput": 105.91117528161583,
+   "tau": 6.223583460949464,
+   "tpot_ms": 9.439252880380137,
+   "steps": 5224,
+   "sections": {
+    "draft": 66.73525708541274,
+    "verify": 229.49401714093983,
+    "save": 2.848642504774034,
+    "accept": 2.957214267924428,
+    "restore": 4.535334310494363,
+    "kv_truncate": 0.3185243373736739,
+    "remove": 0.08522637467831373
+   },
+   "gdn_verify_kernel_s": 17.31531332811713,
+   "run": 2
+  },
+  {
+   "n_seq": 256,
+   "decode_tokens": 32512,
+   "decode_s": 305.82281802780926,
+   "prefill_s": 16.772729402408004,
+   "throughput": 106.30992222772468,
+   "tau": 6.223583460949464,
+   "tpot_ms": 9.403841726023124,
+   "steps": 5224,
+   "sections": {
+    "draft": 66.49471156671643,
+    "verify": 228.61438048351556,
+    "save": 2.8377321772277355,
+    "accept": 2.9489756487309933,
+    "restore": 4.523924624547362,
+    "kv_truncate": 0.3179776957258582,
+    "remove": 0.08511583134531975
+   },
+   "gdn_verify_kernel_s": 17.305066017180682,
+   "run": 3
+  }
+ ],
+ "peak_mem_gb": 10.83377664,
+ "cuda_visible_devices": "0",
+ "gpu_uuid": "cd9789b9-018c-07ae-cf60-11bbd7dcb463",
+ "gpu_backfilled": "launched via src/run_gpu.sh with CUDA_VISIBLE_DEVICES=0 hard-coded, before the field existed"
+}

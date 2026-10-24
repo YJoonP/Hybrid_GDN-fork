@@ -1,0 +1,172 @@
+{
+ "method": "dflash",
+ "batch": 1,
+ "block": 16,
+ "rollback": "confkb",
+ "cuda_visible_devices": "0",
+ "gpu_uuid": "cd9789b9-018c-07ae-cf60-11bbd7dcb463",
+ "snapshot_formula": {
+  "layers": 24,
+  "positions": 16,
+  "batch": 1,
+  "rec_state_bytes": 2097152,
+  "conv_state_bytes": 49152,
+  "total_bytes": 824180736
+ },
+ "engine": "graph",
+ "buckets": [
+  1
+ ],
+ "snapshot_allocated": {
+  "rec_bytes": 100663296,
+  "conv_bytes": 0,
+  "total_bytes": 100663296,
+  "layers": 24,
+  "positions": 2,
+  "batch": 1
+ },
+ "status": "done",
+ "runs": [
+  {
+   "n_seq": 256,
+   "decode_tokens": 32512,
+   "decode_s": 121.09117807727307,
+   "prefill_s": 16.442538613453507,
+   "throughput": 268.49189607563983,
+   "tau": 6.203396298416333,
+   "tpot_ms": 3.7217413880034997,
+   "steps": 5241,
+   "sections": {
+    "draft": 27.46644298867929,
+    "verify": 90.44588638877929,
+    "save": 0.0088872959775615,
+    "accept": 0.1652418533712759,
+    "restore": 2.7680092156529508,
+    "kv_truncate": 0.0367841286063222,
+    "host_gap": 0.11000413570425065,
+    "remove": 0.08992207050323486
+   },
+   "gdn_verify_kernel_s": 0.0,
+   "prediction": {
+    "select": "topk",
+    "k": 1,
+    "thr": null,
+    "slots_per_seq": 2,
+    "row_steps": 5241,
+    "hit_rate": 0.303758824651784,
+    "from_s0_rate": 0.31120015264262546,
+    "replay_tokens_per_row_step": 2.5586720091585575,
+    "replay_hist": {
+     "0": 1592,
+     "1": 978,
+     "2": 703,
+     "3": 507,
+     "4": 364,
+     "5": 275,
+     "6": 250,
+     "7": 159,
+     "8": 103,
+     "9": 106,
+     "10": 75,
+     "11": 58,
+     "12": 38,
+     "13": 23,
+     "14": 10
+    },
+    "conf_source": "head",
+    "head": "/home/sungfire/Hybrid_GDN/ext/confk_head_B/confk-head-B/heads/head_mlp.pt",
+    "head_kind": "mlp"
+   },
+   "run": 1
+  },
+  {
+   "n_seq": 256,
+   "decode_tokens": 32512,
+   "decode_s": 122.28728545177728,
+   "prefill_s": 16.171904421411455,
+   "throughput": 265.8657429502004,
+   "tau": 6.203396298416333,
+   "tpot_ms": 3.7586021215132885,
+   "steps": 5241,
+   "sections": {
+    "draft": 27.681895133219804,
+    "verify": 91.38386646652334,
+    "save": 0.008906751977512369,
+    "accept": 0.16878899056837676,
+    "restore": 2.812018687933682,
+    "kv_truncate": 0.03734630454238784,
+    "host_gap": 0.1068498398761722,
+    "remove": 0.08761327713727951
+   },
+   "gdn_verify_kernel_s": 0.0,
+   "prediction": {
+    "select": "topk",
+    "k": 1,
+    "thr": null,
+    "slots_per_seq": 2,
+    "row_steps": 0,
+    "hit_rate": 0.0,
+    "from_s0_rate": 0.0,
+    "replay_tokens_per_row_step": 0.0,
+    "replay_hist": {},
+    "conf_source": "head",
+    "head": "/home/sungfire/Hybrid_GDN/ext/confk_head_B/confk-head-B/heads/head_mlp.pt",
+    "head_kind": "mlp"
+   },
+   "run": 2
+  },
+  {
+   "n_seq": 256,
+   "decode_tokens": 32512,
+   "decode_s": 122.99427253659815,
+   "prefill_s": 16.16588522773236,
+   "throughput": 264.3375120603745,
+   "tau": 6.203396298416333,
+   "tpot_ms": 3.7803882849288155,
+   "steps": 5241,
+   "sections": {
+    "draft": 27.813752602256752,
+    "verify": 91.92972897338882,
+    "save": 0.00883814397768561,
+    "accept": 0.17087692727148948,
+    "restore": 2.8370606096983186,
+    "kv_truncate": 0.037613568509931646,
+    "host_gap": 0.11011309450270705,
+    "remove": 0.08628861699253321
+   },
+   "gdn_verify_kernel_s": 0.0,
+   "prediction": {
+    "select": "topk",
+    "k": 1,
+    "thr": null,
+    "slots_per_seq": 2,
+    "row_steps": 5241,
+    "hit_rate": 0.303758824651784,
+    "from_s0_rate": 0.31120015264262546,
+    "replay_tokens_per_row_step": 2.5586720091585575,
+    "replay_hist": {
+     "0": 1592,
+     "1": 978,
+     "2": 703,
+     "3": 507,
+     "4": 364,
+     "5": 275,
+     "6": 250,
+     "7": 159,
+     "8": 103,
+     "9": 106,
+     "10": 75,
+     "11": 58,
+     "12": 38,
+     "13": 23,
+     "14": 10
+    },
+    "conf_source": "head",
+    "head": "/home/sungfire/Hybrid_GDN/ext/confk_head_B/confk-head-B/heads/head_mlp.pt",
+    "head_kind": "mlp"
+   },
+   "run": 3
+  }
+ ],
+ "peak_mem_gb": 10.14440448
+}

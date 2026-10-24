@@ -1,0 +1,74 @@
+{
+ "method": "ar",
+ "batch": 1,
+ "block": 1,
+ "rollback": null,
+ "cuda_visible_devices": "0",
+ "gpu_uuid": "cd9789b9-018c-07ae-cf60-11bbd7dcb463",
+ "engine": "graph",
+ "buckets": [
+  1
+ ],
+ "status": "done",
+ "runs": [
+  {
+   "n_seq": 256,
+   "decode_tokens": 32512,
+   "decode_s": 500.6156192170456,
+   "prefill_s": 16.53743476048112,
+   "throughput": 64.94403840385208,
+   "tau": 1.0,
+   "tpot_ms": 15.38758172479336,
+   "steps": 32512,
+   "sections": {
+    "draft": 0.0,
+    "verify": 499.46295801257435,
+    "accept": 0.24911155332938645,
+    "host_gap": 0.5689874705714144,
+    "remove": 0.3345621805638075
+   },
+   "gdn_verify_kernel_s": 0.0,
+   "run": 1
+  },
+  {
+   "n_seq": 256,
+   "decode_tokens": 32512,
+   "decode_s": 503.9189595170319,
+   "prefill_s": 16.324661940336227,
+   "throughput": 64.51831070448368,
+   "tau": 1.0,
+   "tpot_ms": 15.489336056336859,
+   "steps": 32512,
+   "sections": {
+    "draft": 0.0,
+    "verify": 502.77040604208344,
+    "accept": 0.2528870408948225,
+    "host_gap": 0.5660007806303958,
+    "remove": 0.3296656534075737
+   },
+   "gdn_verify_kernel_s": 0.0,
+   "run": 2
+  },
+  {
+   "n_seq": 256,
+   "decode_tokens": 32512,
+   "decode_s": 505.58169893268496,
+   "prefill_s": 16.087248196825385,
+   "throughput": 64.30612513988322,
+   "tau": 1.0,
+   "tpot_ms": 15.540694808504918,
+   "steps": 32512,
+   "sections": {
+    "draft": 0.0,
+    "verify": 504.4468463849957,
+    "accept": 0.2548715526641997,
+    "host_gap": 0.5573516764459145,
+    "remove": 0.3226293185725808
+   },
+   "gdn_verify_kernel_s": 0.0,
+   "run": 3
+  }
+ ],
+ "peak_mem_gb": 9.981869568,
+ "reused_from": "/home/sungfire/Hybrid_GDN/results_graph_fullstate"
+}

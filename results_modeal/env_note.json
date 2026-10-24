@@ -1,0 +1,3 @@
+{
+ "note": "replaced: the original env.json was written by Phase 0 on GPU 0 (gpu_total_gb 25.296044032); this dir's Phase 4 cells ran on GPU 1 (cuda_visible_devices=1 in every cell)"
+}

@@ -1,0 +1,9 @@
+{
+ "cell": "DDTree-b15",
+ "batch": 128,
+ "rollback": "tree_fullstate",
+ "runs": [],
+ "oom": true,
+ "oom_msg": "CUDA out of memory. Tried to allocate 4.25 GiB. GPU 0 has a total capacity of 23.56 GiB of which 1.34 GiB is free. Including non-PyTorch memory, this process has 22.21 GiB memory in use. Of the allocated memory 21.88 GiB is allocated by PyTorch, and 13.94 MiB is reserved by PyTorch but unallocated. ",
+ "peak_gib": 21.884825706481934
+}

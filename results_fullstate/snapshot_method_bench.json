@@ -1,0 +1,6 @@
+{
+ "B1_fused_per_step_store_ms_per_layer": 0.07071743965148926,
+ "B1_token_loop_16_calls_ms_per_layer": 2.5083302307128905,
+ "B8_fused_per_step_store_ms_per_layer": 0.4211507034301758,
+ "B8_token_loop_16_calls_ms_per_layer": 3.5537100219726563
+}

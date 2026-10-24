@@ -1,0 +1,104 @@
+{
+ "method": "dflash",
+ "batch": 64,
+ "block": 16,
+ "rollback": "specla",
+ "cuda_visible_devices": "0",
+ "gpu_uuid": "cd9789b9-018c-07ae-cf60-11bbd7dcb463",
+ "snapshot_formula": {
+  "layers": 24,
+  "positions": 16,
+  "batch": 64,
+  "rec_state_bytes": 2097152,
+  "conv_state_bytes": 49152,
+  "total_bytes": 52747567104
+ },
+ "engine": "graph",
+ "buckets": [
+  1,
+  2,
+  4,
+  8,
+  16,
+  32,
+  64
+ ],
+ "snapshot_allocated": {
+  "rec_bytes": 0,
+  "conv_bytes": 0,
+  "total_bytes": 0,
+  "layers": 24,
+  "positions": 0,
+  "batch": 64
+ },
+ "status": "done",
+ "runs": [
+  {
+   "n_seq": 256,
+   "decode_tokens": 32512,
+   "decode_s": 28.15817696414888,
+   "prefill_s": 16.479244397953153,
+   "throughput": 1154.620202912796,
+   "tau": 6.234324065196549,
+   "tpot_ms": 51.58936066588402,
+   "steps": 96,
+   "sections": {
+    "draft": 7.6817510246858,
+    "verify": 19.24317486572265,
+    "save": 0.00016588799958117302,
+    "accept": 0.004310016065835955,
+    "restore": 0.9405265910327437,
+    "kv_truncate": 0.009101311891339723,
+    "host_gap": 0.002736322922400364,
+    "remove": 0.27641094382852316
+   },
+   "gdn_verify_kernel_s": 0.0,
+   "run": 1
+  },
+  {
+   "n_seq": 256,
+   "decode_tokens": 32512,
+   "decode_s": 28.016135787591338,
+   "prefill_s": 16.500291454605758,
+   "throughput": 1160.4741012998634,
+   "tau": 6.234324065196549,
+   "tpot_ms": 51.3147550546983,
+   "steps": 96,
+   "sections": {
+    "draft": 7.518466623447835,
+    "verify": 19.26428879356384,
+    "save": 0.00016179199959151448,
+    "accept": 0.004314112070947888,
+    "restore": 0.9406300141215326,
+    "kv_truncate": 0.00909414389403537,
+    "host_gap": 0.0027432978774898018,
+    "remove": 0.27643701061606407
+   },
+   "gdn_verify_kernel_s": 0.0,
+   "run": 2
+  },
+  {
+   "n_seq": 256,
+   "decode_tokens": 32512,
+   "decode_s": 28.009076533839107,
+   "prefill_s": 16.498591748066247,
+   "throughput": 1160.7665808160684,
+   "tau": 6.234324065196549,
+   "tpot_ms": 51.304741908785175,
+   "steps": 96,
+   "sections": {
+    "draft": 7.5446790058091295,
+    "verify": 19.233285089492806,
+    "save": 0.0001669119995785877,
+    "accept": 0.004287488061934714,
+    "restore": 0.9397688314914703,
+    "kv_truncate": 0.00910745589667931,
+    "host_gap": 0.002582504494699066,
+    "remove": 0.2751992465928197
+   },
+   "gdn_verify_kernel_s": 0.0,
+   "run": 3
+  }
+ ],
+ "peak_mem_gb": 16.906764288
+}

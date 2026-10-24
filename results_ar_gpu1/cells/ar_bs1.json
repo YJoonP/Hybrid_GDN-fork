@@ -1,0 +1,75 @@
+{
+ "method": "ar",
+ "batch": 1,
+ "block": 1,
+ "rollback": null,
+ "cuda_visible_devices": "1",
+ "gpu_uuid": "5b929d48-a1d9-d40e-b4e5-6ae83db625b0",
+ "status": "done",
+ "runs": [
+  {
+   "n_seq": 256,
+   "decode_tokens": 32512,
+   "decode_s": 1424.8577786125243,
+   "prefill_s": 16.33220994938165,
+   "throughput": 22.81771590681775,
+   "tau": 1.0,
+   "tpot_ms": 43.81169166239357,
+   "steps": 32512,
+   "sections": {
+    "draft": 0.23749019298702478,
+    "verify": 1407.5391822867095,
+    "save": 0.2861622078344226,
+    "accept": 14.95875470712781,
+    "restore": 0.2589810583740473,
+    "kv_truncate": 1.12514887470752,
+    "remove": 0.4520592847838998
+   },
+   "gdn_verify_kernel_s": 0.0,
+   "run": 1
+  },
+  {
+   "n_seq": 256,
+   "decode_tokens": 32512,
+   "decode_s": 1398.6966870259494,
+   "prefill_s": 16.04014798719436,
+   "throughput": 23.244496324024553,
+   "tau": 1.0,
+   "tpot_ms": 43.0061603976756,
+   "steps": 32512,
+   "sections": {
+    "draft": 0.2317765736952424,
+    "verify": 1381.6079459358007,
+    "save": 0.2801195774227381,
+    "accept": 14.738967966288328,
+    "restore": 0.25393269304186106,
+    "kv_truncate": 1.1035441029816866,
+    "remove": 0.48040017671883106
+   },
+   "gdn_verify_kernel_s": 0.0,
+   "run": 2
+  },
+  {
+   "n_seq": 256,
+   "decode_tokens": 32512,
+   "decode_s": 1389.9744003387168,
+   "prefill_s": 15.942862936295569,
+   "throughput": 23.390358838319102,
+   "tau": 1.0,
+   "tpot_ms": 42.73846721792603,
+   "steps": 32512,
+   "sections": {
+    "draft": 0.2308500437065959,
+    "verify": 1373.0184849994257,
+    "save": 0.2780591966584325,
+    "accept": 14.635091881267726,
+    "restore": 0.25281320232897997,
+    "kv_truncate": 1.097746865823865,
+    "remove": 0.461354149505496
+   },
+   "gdn_verify_kernel_s": 0.0,
+   "run": 3
+  }
+ ],
+ "peak_mem_gb": 9.96482816
+}

@@ -1,0 +1,182 @@
+{
+ "method": "dflash",
+ "batch": 8,
+ "block": 16,
+ "rollback": "confkb",
+ "cuda_visible_devices": "0",
+ "gpu_uuid": "cd9789b9-018c-07ae-cf60-11bbd7dcb463",
+ "snapshot_formula": {
+  "layers": 24,
+  "positions": 16,
+  "batch": 8,
+  "rec_state_bytes": 2097152,
+  "conv_state_bytes": 49152,
+  "total_bytes": 6593445888
+ },
+ "engine": "graph",
+ "buckets": [
+  1,
+  2,
+  4,
+  8
+ ],
+ "snapshot_allocated": {
+  "rec_bytes": 2013265920,
+  "conv_bytes": 0,
+  "total_bytes": 2013265920,
+  "layers": 24,
+  "positions": 5,
+  "batch": 8
+ },
+ "status": "done",
+ "runs": [
+  {
+   "n_seq": 256,
+   "decode_tokens": 32512,
+   "decode_s": 33.100725347176194,
+   "prefill_s": 16.504159106872976,
+   "throughput": 982.2141254911679,
+   "tau": 6.223583460949464,
+   "tpot_ms": 7.961875220873451,
+   "steps": 668,
+   "sections": {
+    "draft": 8.386961877875015,
+    "verify": 23.178641389846813,
+    "save": 0.001158143997075974,
+    "accept": 0.023625728502869644,
+    "restore": 1.1766937613487245,
+    "kv_truncate": 0.012395520066376937,
+    "host_gap": 0.0171159424508233,
+    "remove": 0.30413298308849335
+   },
+   "gdn_verify_kernel_s": 0.0,
+   "prediction": {
+    "select": "topk",
+    "k": 4,
+    "thr": null,
+    "slots_per_seq": 5,
+    "row_steps": 5224,
+    "hit_rate": 0.7297090352220521,
+    "from_s0_rate": 0.059150076569678404,
+    "replay_tokens_per_row_step": 0.6406967840735069,
+    "replay_hist": {
+     "0": 3812,
+     "1": 625,
+     "2": 318,
+     "3": 190,
+     "4": 96,
+     "5": 77,
+     "6": 49,
+     "7": 25,
+     "8": 20,
+     "9": 6,
+     "10": 2,
+     "11": 4
+    },
+    "conf_source": "head",
+    "head": "/home/sungfire/Hybrid_GDN/ext/confk_head_B/confk-head-B/heads/head_mlp.pt",
+    "head_kind": "mlp"
+   },
+   "run": 1
+  },
+  {
+   "n_seq": 256,
+   "decode_tokens": 32512,
+   "decode_s": 32.9268497498706,
+   "prefill_s": 16.632913854904473,
+   "throughput": 987.4008672854521,
+   "tau": 6.223583460949464,
+   "tpot_ms": 7.9177743473409254,
+   "steps": 668,
+   "sections": {
+    "draft": 8.341198045738034,
+    "verify": 23.051077659606957,
+    "save": 0.0011519999970914863,
+    "accept": 0.02346496047824633,
+    "restore": 1.1740395536720758,
+    "kv_truncate": 0.012349440140184176,
+    "host_gap": 0.01736189555411796,
+    "remove": 0.3062061946839094
+   },
+   "gdn_verify_kernel_s": 0.0,
+   "prediction": {
+    "select": "topk",
+    "k": 4,
+    "thr": null,
+    "slots_per_seq": 5,
+    "row_steps": 5224,
+    "hit_rate": 0.7297090352220521,
+    "from_s0_rate": 0.059150076569678404,
+    "replay_tokens_per_row_step": 0.6406967840735069,
+    "replay_hist": {
+     "0": 3812,
+     "1": 625,
+     "2": 318,
+     "3": 190,
+     "4": 96,
+     "5": 77,
+     "6": 49,
+     "7": 25,
+     "8": 20,
+     "9": 6,
+     "10": 2,
+     "11": 4
+    },
+    "conf_source": "head",
+    "head": "/home/sungfire/Hybrid_GDN/ext/confk_head_B/confk-head-B/heads/head_mlp.pt",
+    "head_kind": "mlp"
+   },
+   "run": 2
+  },
+  {
+   "n_seq": 256,
+   "decode_tokens": 32512,
+   "decode_s": 32.95386715698987,
+   "prefill_s": 16.4758861316368,
+   "throughput": 986.5913413170949,
+   "tau": 6.223583460949464,
+   "tpot_ms": 7.925533363028424,
+   "steps": 668,
+   "sections": {
+    "draft": 8.346830518037068,
+    "verify": 23.074947082519536,
+    "save": 0.0011376639971276813,
+    "accept": 0.023443456448614664,
+    "restore": 1.1740897261500343,
+    "kv_truncate": 0.012364800117444405,
+    "host_gap": 0.017015466117417482,
+    "remove": 0.30403844360262156
+   },
+   "gdn_verify_kernel_s": 0.0,
+   "prediction": {
+    "select": "topk",
+    "k": 4,
+    "thr": null,
+    "slots_per_seq": 5,
+    "row_steps": 5224,
+    "hit_rate": 0.7297090352220521,
+    "from_s0_rate": 0.059150076569678404,
+    "replay_tokens_per_row_step": 0.6406967840735069,
+    "replay_hist": {
+     "0": 3812,
+     "1": 625,
+     "2": 318,
+     "3": 190,
+     "4": 96,
+     "5": 77,
+     "6": 49,
+     "7": 25,
+     "8": 20,
+     "9": 6,
+     "10": 2,
+     "11": 4
+    },
+    "conf_source": "head",
+    "head": "/home/sungfire/Hybrid_GDN/ext/confk_head_B/confk-head-B/heads/head_mlp.pt",
+    "head_kind": "mlp"
+   },
+   "run": 3
+  }
+ ],
+ "peak_mem_gb": 12.753273344
+}
